@@ -86,14 +86,14 @@ void vendor_load_properties()
     }
 
     // Adb
-	 property_override("ro.adb.secure", "0");
+    property_override("ro.adb.secure", "0");
     property_override("ro.secure", "0");
     property_override("ro.debuggable", "0");
     property_override("persist.sys.usb.config", "adb");
 	
-	 // Turn off audio
-	 property_override("ro.config.media_vol_default", "0");
-	 property_override("ro.config.vc_call_vol_default", "0");
+    // Turn off audio
+    property_override("ro.config.media_vol_default", "0");
+    property_override("ro.config.vc_call_vol_default", "0");
     property_override("ro.config.alarm_vol_default", "0");
 
     std::string device = GetProperty("ro.product.device", "");
