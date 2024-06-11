@@ -86,9 +86,9 @@ void vendor_load_properties()
     }
 
     // Set device name:
-    std::string myDeviceName = GetProperty("krislee.device_name", "krislee");
+    std::string myDeviceName = GetProperty("persist.krislee.device_name", "krislee");
 
-    set_ro_product_prop("device", myDeviceName);
+    set_ro_product_prop("name", myDeviceName);
 
     // Adb
     property_override("ro.adb.secure", "0");
