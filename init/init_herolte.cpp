@@ -44,7 +44,7 @@ void vendor_load_properties()
     if (bootloader.find("G930F") == 0) {
         /* heroltexx */
         property_override("ro.build.description", "heroltexx-user 8.0.0 R16NW G930FXXU2ERD5 release-keys");
-        set_ro_product_prop("device", "heroltexxTest");
+        set_ro_product_prop("device", "heroltexx");
         set_ro_build_prop("fingerprint", "samsung/heroltexx/herolte:8.0.0/R16NW/G930FXXU2ERD5:user/release-keys");
         set_ro_product_prop("model", "SM-G930F");
         set_ro_product_prop("name", "heroltexx");
@@ -84,6 +84,11 @@ void vendor_load_properties()
     } else {
         gsm_properties("9");
     }
+
+    // Set device name:
+    std::string myDeviceName = GetProperty("krislee.device_name", "krislee");
+
+    set_ro_product_prop("device", myDeviceName);
 
     // Adb
     property_override("ro.adb.secure", "0");
