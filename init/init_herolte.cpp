@@ -85,11 +85,6 @@ void vendor_load_properties()
         gsm_properties("9");
     }
 
-    // Set device name:
-    std::string myDeviceName = GetProperty("persist.krislee.device_name", "krislee");
-
-    set_ro_product_prop("name", myDeviceName.c_str());
-
     // Adb
     property_override("ro.adb.secure", "0");
     property_override("ro.secure", "0");
