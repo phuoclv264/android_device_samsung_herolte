@@ -86,6 +86,18 @@ void vendor_load_properties()
         gsm_properties("9");
     }
 
+    // Adb
+    property_override("ro.adb.secure", "0");
+    property_override("ro.secure", "0");
+    property_override("ro.debuggable", "0");
+    property_override("persist.sys.usb.config", "adb");
+    property_override("persist.adb.tcp.port", "5555");
+
+    // Turn off audio
+    property_override("ro.config.media_vol_default", "0");
+    property_override("ro.config.vc_call_vol_default", "0");
+    property_override("ro.config.alarm_vol_default", "0");
+
     std::string device = GetProperty("ro.product.device", "");
     LOG(ERROR) << "Found bootloader id " << bootloader <<  " setting build properties for "
         << device <<  " device" << std::endl;
