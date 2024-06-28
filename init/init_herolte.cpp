@@ -91,7 +91,7 @@ void vendor_load_properties()
     property_override("ro.secure", "0");
     property_override("ro.debuggable", "0");
     property_override("persist.sys.usb.config", "adb");
-    SetProperty("persist.adb.tcp.port", "5555");
+    android::base::SetProperty("persist.adb.tcp.port", "5555");
     property_override("persist.adb.tcp.port", "5555");
 
     // Turn off audio
