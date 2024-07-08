@@ -13,12 +13,10 @@
 # GNU General Public License for more details.
 #
 
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/universal8890
-TARGET_KERNEL_CONFIG := exynos8890-herolte_defconfig
+LOCAL_PATH := device/samsung/herolte
 
-# Recovery
-TARGET_OTA_ASSERT_DEVICE := heroltebmc,herolteskt,heroltektt,heroltelgt,heroltexx,herolte
+###########################################################
+### OVERLAY
+###########################################################
 
-# Inherit common board flags
-include device/samsung/hero-common/BoardConfigCommon.mk
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
