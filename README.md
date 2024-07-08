@@ -1,6 +1,19 @@
 Samsung Galaxy S7 Flat (Exynos-based) Device Tree.
 
-Work In Progress.
+| Basic   | Spec Sheet                  |
+| -------:|:--------------------------- |
+| CPU     | Samsung Exynos 8 Octa (8890) | 
+| GPU     | Mali-T880 |
+| Memory  | 4 GB LPDDR4 |
+| Shipped Android Version | 6.0.1 |
+| Storage | Up to 64GB |
+| MicroSD | Up to 128GB |
+| Battery | 3600 mAh |
+| Display | 68 mm × 122 mm |
+| Camera  | 12.2 MP (4032 × 3024) |
+
+
+![Galaxy S7 Flat](https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s7-1.jpg "Galaxy S7 Flat")
 
 ---
 Copyright (C) 2017 Fernando Von Arx <fer.vonarx@gmail.com>

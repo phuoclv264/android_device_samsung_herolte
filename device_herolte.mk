@@ -14,9 +14,3 @@
 #
 
 LOCAL_PATH := device/samsung/herolte
-
-###########################################################
-### OVERLAY
-###########################################################
-
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
