@@ -90,7 +90,6 @@ void vendor_load_properties()
     property_override("ro.secure", "0");
     property_override("ro.debuggable", "0");
     property_override("persist.sys.usb.config", "adb");
-    property_override("persist.adb.tcp.port", "5555");
 
     // Turn off audio
     property_override("ro.config.media_vol_default", "0");
